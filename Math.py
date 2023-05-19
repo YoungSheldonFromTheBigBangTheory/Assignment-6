@@ -9,6 +9,6 @@ for n in range(k):
 
 print(s)
 
-# first : is the first value of (n) (the index of summation)
-# last : is the last value of (n)
-# const : is the number that you want to sum its multiplication each (n) times with (n)
+# k : (Upper Limit)
+# n : (Lower Limit)
+# s : (const)
