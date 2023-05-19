@@ -1,17 +1,14 @@
 import math
 
-x = 1
-h = int(input(": "))
+s = int(0)
+n = int(0)
+k = int(input("Input Upper Limit: "))
 
-#for i in range(h):
-    #pi = (4/x)
+for n in range(k):
+    s += (((-1)**n)*4)/(2*n+1)
 
-#print(pi)
+print(s)
 
-
-
-def sigma(first, last, const):
-    sum = 0
-    for i in range(first, last + 1):
-        sum += const * i
-    return sum
+# first : is the first value of (n) (the index of summation)
+# last : is the last value of (n)
+# const : is the number that you want to sum its multiplication each (n) times with (n)
