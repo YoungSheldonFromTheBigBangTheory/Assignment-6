@@ -1,12 +1,19 @@
+
 import math
 
 s = int(0)
 n = int(0)
-k = int(input("Input Upper Limit: "))
 
-for n in range(k):
-    s += (((-1)**n)*4)/(2*n+1)
 
+while True:
+    k = input("\nInput Upper Limit: ")
+    if k.isnumeric() is True:    
+        for n in range(int(k)):
+            s += (((-1)**n)*4)/(2*n+1)
+        break
+    else:
+        print("\nInvalid Input! Type a Number.")
+        
 print(s)
 
 # k : (Upper Limit)
